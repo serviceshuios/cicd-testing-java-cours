@@ -98,6 +98,8 @@ def sendEmail(recipients) {
 String getEnvName(String branchName) {
     if (branchName == 'main') {
         return 'prod'
+    } else if (branchName.startsWith("release-") || branchName.startsWith("hotfix-") || branchName == 'ready') {
+        return 'uat'
     }
     return (branchName == 'ready' || branchName.startsWith("release-") || branchName.startsWith("hotfix-")) ? 'uat' : 'dev'
 }
@@ -109,6 +111,7 @@ String getHTTPPort(String branchName) {
     }
     return (branchName == 'ready' || branchName.startsWith("release-") || branchName.startsWith("hotfix-")) ? '8888' : '8090'
 }
+
 
 String getTag(String buildNumber, String branchName) {
     if (branchName == 'main') {
