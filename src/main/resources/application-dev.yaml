@@ -12,6 +12,7 @@ spring:
     change-log: classpath:/db/changelog/db.changelog-dev.yaml
 
 
+
 server:
   port: 8090
 
