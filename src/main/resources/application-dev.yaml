@@ -1,32 +1,15 @@
 spring:
   datasource:
-<<<<<<< HEAD
-<<<<<<< HEAD
     url: jdbc:mysql://172.17.0.1:3307/calculator?serverTimezone=UTC
     username: root
     password: my-secret-pw
-=======
-    url: jdbc:postgresql://localhost:5434/calculator
-    username: postgres
-    password: mysecretpassword
-    driver-class-name: org.postgresql.Driver
->>>>>>> Liquibase with Postgres not working
-=======
-    url: jdbc:mysql://localhost:3307/calculator?serverTimezone=UTC
-    username: root
-    password: my-secret-pw
->>>>>>> liquibase with mysql
 
   jpa:
     hibernate:
       ddl-auto: none
   liquibase:
-<<<<<<< HEAD
     #disable liquibase at start-up
     enabled: false
-=======
-    change-log: classpath:/db/changelog/db.changelog-dev.yaml
->>>>>>> Liquibase with Postgres not working
 
 
 server:
