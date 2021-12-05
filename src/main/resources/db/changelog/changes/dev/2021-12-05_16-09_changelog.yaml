@@ -1,0 +1,12 @@
+databaseChangeLog:
+- changeSet:
+    id: 1638720543278-1
+    author: centos (generated)
+    changes:
+    - addColumn:
+        columns:
+        - column:
+            name: type_symbol
+            type: VARCHAR(255 BYTE)
+        tableName: calculation_model
+
