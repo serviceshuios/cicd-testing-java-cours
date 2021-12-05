@@ -1,0 +1,77 @@
+databaseChangeLog:
+- changeSet:
+    id: 1638717962369-1
+    author: centos (generated)
+    changes:
+    - createTable:
+        columns:
+        - column:
+            autoIncrement: true
+            constraints:
+              nullable: false
+              primaryKey: true
+            name: id
+            type: INT
+        - column:
+            name: formatted_solution
+            type: VARCHAR(255)
+        - column:
+            name: left_argument
+            type: INT
+        - column:
+            name: right_argument
+            type: INT
+        - column:
+            name: solution
+            type: INT
+        - column:
+            name: type
+            type: INT
+        tableName: calculation_model
+- changeSet:
+    id: 1638717962369-2
+    author: centos (generated)
+    changes:
+    - insert:
+        columns:
+        - column:
+            name: id
+            valueNumeric: 1
+        - column:
+            name: formatted_solution
+            value: '123'
+        - column:
+            name: left_argument
+            valueNumeric: 45
+        - column:
+            name: right_argument
+            valueNumeric: 78
+        - column:
+            name: solution
+            valueNumeric: 123
+        - column:
+            name: type
+            valueNumeric: 0
+        tableName: calculation_model
+    - insert:
+        columns:
+        - column:
+            name: id
+            valueNumeric: 2
+        - column:
+            name: formatted_solution
+            value: '624'
+        - column:
+            name: left_argument
+            valueNumeric: 8
+        - column:
+            name: right_argument
+            valueNumeric: 78
+        - column:
+            name: solution
+            valueNumeric: 624
+        - column:
+            name: type
+            valueNumeric: 1
+        tableName: calculation_model
+

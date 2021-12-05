@@ -19,7 +19,7 @@ node {
 
         stage('Build with test') {
 
-            sh "mvn clean install -Dspring.profiles.active=dev"
+            sh "mvn clean install"
         }
 
         stage('Sonarqube Analysis') {
