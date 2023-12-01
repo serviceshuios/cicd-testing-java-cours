@@ -1,7 +1,7 @@
 databaseChangeLog:
 - changeSet:
-    id: 1638717962369-1
-    author: centos (generated)
+    id: 1701393175045-1
+    author: zecun (generated)
     changes:
     - createTable:
         columns:
@@ -29,8 +29,8 @@ databaseChangeLog:
             type: INT
         tableName: calculation_model
 - changeSet:
-    id: 1638717962369-2
-    author: centos (generated)
+    id: 1701393175045-2
+    author: zecun (generated)
     changes:
     - insert:
         columns:
@@ -39,39 +39,18 @@ databaseChangeLog:
             valueNumeric: 1
         - column:
             name: formatted_solution
-            value: '123'
+            value: '66'
         - column:
             name: left_argument
-            valueNumeric: 45
+            valueNumeric: 54
         - column:
             name: right_argument
-            valueNumeric: 78
+            valueNumeric: 12
         - column:
             name: solution
-            valueNumeric: 123
+            valueNumeric: 66
         - column:
             name: type
             valueNumeric: 0
-        tableName: calculation_model
-    - insert:
-        columns:
-        - column:
-            name: id
-            valueNumeric: 2
-        - column:
-            name: formatted_solution
-            value: '624'
-        - column:
-            name: left_argument
-            valueNumeric: 8
-        - column:
-            name: right_argument
-            valueNumeric: 78
-        - column:
-            name: solution
-            valueNumeric: 624
-        - column:
-            name: type
-            valueNumeric: 1
         tableName: calculation_model
 
